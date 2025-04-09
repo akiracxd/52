@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аэропорт Челябинск | Рейсы</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <i class="fas fa-plane-departure"></i>
+                    <span>Аэропорт Челябинск</span>
+                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav__link">Главная</a>
+                    <a href="flights.html" class="nav__link active">Рейсы</a>
+                    <a href="services.html" class="nav__link">Услуги</a>
+                    <a href="info.html" class="nav__link">Информация</a>
+                    <a href="contacts.html" class="nav__link">Контакты</a>
+                </nav>
+                <button class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="flights">
+            <div class="container">
+                <h2 class="section-title">Расписание рейсов</h2>
+                
+                <div class="flights__tabs">
+                    <button class="flights__tab active" data-tab="departures">Вылет</button>
+                    <button class="flights__tab" data-tab="arrivals">Прилет</button>
+                </div>
+                
+                <div class="flights__search">
+                    <input type="text" class="flights__search-input" placeholder="Поиск по номеру рейса или направлению...">
+                    <button class="flights__search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="flights__table active" id="departures">
+                    <div class="flights__table-header">
+                        <div class="flights__table-col">Время</div>
+                        <div class="flights__table-col">Рейс</div>
+                        <div class="flights__table-col">Направление</div>
+                        <div class="flights__table-col">Авиакомпания</div>
+                        <div class="flights__table-col">Статус</div>
+                    </div>
+                    
+                    <div class="flights__table-row">
+                        <div class="flights__table-cell">08:45</div>
+                        <div class="flights__table-cell">SU-1442</div>
+                        <div class="flights__table-cell">Москва (Шереметьево)</div>
+                        <div class="flights__table-cell">Аэрофлот</div>
+                        <div class="flights__table-cell status--checkin">Регистрация</div>
+                    </div>
+                    
+                    <div class="flights__table-row">
+                        <div class="flights__table-cell">10:20</div>
+                        <div class="flights__table-cell">SU-6321</div>
+                        <div class="flights__table-cell">Санкт-Петербург</div>
+                        <div class="flights__table-cell">Аэрофлот</div>
+                        <div class="flights__table-cell status--ontime">По расписанию</div>
+                    </div>
+                    
+                    <div class="flights__table-row">
+                        <div class="flights__table-cell">12:15</div>
+                        <div class="flights__table-cell">SU-1854</div>
+                        <div class="flights__table-cell">Сочи</div>
+                        <div class="flights__table-cell">Аэрофлот</div>
+                        <div class="flights__table-cell status--delayed">Задержка +1ч</div>
+                    </div>
+                    
+                    <div class="flights__table-row">
+                        <div class="flights__table-cell">14:30</div>
+                        <div class="flights__table-cell">U6-342</div>
+                        <div class="flights__table-cell">Екатеринбург</div>
+                        <div class="flights__table-cell">Уральские авиалинии</div>
+                        <div class="flights__table-cell status--ontime">По расписанию</div>
+                    </div>
+                </div>
+                
+                <div class="flights__table" id="arrivals">
+                    <div class="flights__table-header">
+                        <div class="flights__table-col">Время</div>
+                        <div class="flights__table-col">Рейс</div>
+                        <div class="flights__table-col">Откуда</div>
+                        <div class="flights__table-col">Авиакомпания</div>
+                        <div class="flights__table-col">Статус</div>
+                    </div>
+                    
+                    <div class="flights__table-row">
+                        <div class="flights__table-cell">09:30</div>
+                        <div class="flights__table-cell">SU-1441</div>
+                        <div class="flights__table-cell">Москва (Домодедово)</div>
+                        <div class="flights__table-cell">Аэрофлот</div>
+                        <div class="flights__table-cell status--arrived">Приземлился</div>
+                    </div>
+                    
+                    <div class="flights__table-row">
+                        <div class="flights__table-cell">11:45</div>
+                        <div class="flights__table-cell">SU-2543</div>
+                        <div class="flights__table-cell">Новосибирск</div>
+                        <div class="flights__table-cell">Аэрофлот</div>
+                        <div class="flights__table-cell status--ontime">По расписанию</div>
+                    </div>
+                    
+                    <div class="flights__table-row">
+                        <div class="flights__table-cell">13:20</div>
+                        <div class="flights__table-cell">U6-341</div>
+                        <div class="flights__table-cell">Екатеринбург</div>
+                        <div class="flights__table-cell">Уральские авиалинии</div>
+                        <div class="flights__table-cell status--ontime">По расписанию</div>
+                    </div>
+                </div>
+                
+                <div class="flights__load-more">
+                    <button class="btn btn--outline">Показать еще</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__col">
+                    <h4 class="footer__title">Аэропорт Челябинск</h4>
+                    <p class="footer__text">Крупнейший аэропорт Уральского региона</p>
+                    <div class="footer__social">
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">Контакты</h4>
+                    <p class="footer__text"><i class="fas fa-phone"></i> +7 (351) 123-45-67</p>
+                    <p class="footer__text"><i class="fas fa-envelope"></i> info@chel-airport.ru</p>
+                    <p class="footer__text"><i class="fas fa-map-marker-alt"></i> Челябинск, ул. Аэропортная, 1</p>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">Навигация</h4>
+                    <a href="index.html" class="footer__link">Главная</a>
+                    <a href="flights.html" class="footer__link">Рейсы</a>
+                    <a href="services.html" class="footer__link">Услуги</a>
+                    <a href="info.html" class="footer__link">Информация</a>
+                    <a href="contacts.html" class="footer__link">Контакты</a>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                © 2025 Аэропорт Челябинск. Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal-overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

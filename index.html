@@ -1,11 +1,210 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Аэропорт Челябинск | Главная</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <i class="fas fa-plane-departure"></i>
+                    <span>Аэропорт Челябинск</span>
+                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav__link active">Главная</a>
+                    <a href="flights.html" class="nav__link">Рейсы</a>
+                    <a href="services.html" class="nav__link">Услуги</a>
+                    <a href="info.html" class="nav__link">Информация</a>
+                    <a href="contacts.html" class="nav__link">Контакты</a>
+                </nav>
+                <button class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">Добро пожаловать в аэропорт Челябинск</h1>
+                <p class="hero__text">Международные и внутренние рейсы с 2025 года</p>
+                <div class="hero__actions">
+                    <button class="btn hero__btn" data-modal="flights-modal">Расписание рейсов</button>
+                    <button class="btn hero__btn btn--outline" data-modal="online-board">Онлайн-табло</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">Наши преимущества</h2>
+                <div class="features__grid">
+                    <div class="feature-card">
+                        <div class="feature-card__icon"><i class="fas fa-clock"></i></div>
+                        <h3 class="feature-card__title">Экономия времени</h3>
+                        <p class="feature-card__text">Быстрая регистрация и прохождение контроля</p>
+                        <button class="btn feature-card__btn" data-modal="time-modal">Подробнее</button>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-card__icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3 class="feature-card__title">Безопасность</h3>
+                        <p class="feature-card__text">Современные системы контроля и охраны</p>
+                        <button class="btn feature-card__btn" data-modal="security-modal">Подробнее</button>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-card__icon"><i class="fas fa-concierge-bell"></i></div>
+                        <h3 class="feature-card__title">Комфорт</h3>
+                        <p class="feature-card__text">Удобные зоны ожидания и сервисы</p>
+                        <button class="btn feature-card__btn" data-modal="comfort-modal">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="announcements">
+            <div class="container">
+                <h2 class="section-title">Объявления</h2>
+                <div class="announcements__slider">
+                    <div class="announcement active">
+                        <p class="announcement__text">Внимание! С 1 июня изменяется схема проезда к терминалу.</p>
+                    </div>
+                    <div class="announcement">
+                        <p class="announcement__text">Новые направления: Стамбул, Дубай, Пекин с 15 июля.</p>
+                    </div>
+                    <div class="announcement">
+                        <p class="announcement__text">Бесплатный Wi-Fi на всей территории аэропорта.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__col">
+                    <h4 class="footer__title">Аэропорт Челябинск</h4>
+                    <p class="footer__text">Крупнейший аэропорт Уральского региона</p>
+                    <div class="footer__social">
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">Контакты</h4>
+                    <p class="footer__text"><i class="fas fa-phone"></i> +7 (351) 123-45-67</p>
+                    <p class="footer__text"><i class="fas fa-envelope"></i> info@chel-airport.ru</p>
+                    <p class="footer__text"><i class="fas fa-map-marker-alt"></i> Челябинск, ул. Аэропортная, 1</p>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">Навигация</h4>
+                    <a href="index.html" class="footer__link">Главная</a>
+                    <a href="flights.html" class="footer__link">Рейсы</a>
+                    <a href="services.html" class="footer__link">Услуги</a>
+                    <a href="info.html" class="footer__link">Информация</a>
+                    <a href="contacts.html" class="footer__link">Контакты</a>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                © 2025 Аэропорт Челябинск. Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальные окна -->
+    <div class="modal" id="flights-modal">
+        <div class="modal__content">
+            <button class="modal__close">&times;</button>
+            <h2 class="modal__title">Расписание рейсов</h2>
+            <div class="modal__tabs">
+                <button class="modal__tab active" data-tab="departures">Вылет</button>
+                <button class="modal__tab" data-tab="arrivals">Прилет</button>
+            </div>
+            <div class="modal__tab-content active" id="departures">
+                <div class="flight-item">
+                    <div class="flight-item__time">08:45</div>
+                    <div class="flight-item__destination">Москва (Шереметьево)</div>
+                    <div class="flight-item__number">SU-1442</div>
+                    <div class="flight-item__status">Регистрация</div>
+                </div>
+                <div class="flight-item">
+                    <div class="flight-item__time">10:20</div>
+                    <div class="flight-item__destination">Санкт-Петербург</div>
+                    <div class="flight-item__number">SU-6321</div>
+                    <div class="flight-item__status">По расписанию</div>
+                </div>
+                <div class="flight-item">
+                    <div class="flight-item__time">12:15</div>
+                    <div class="flight-item__destination">Сочи</div>
+                    <div class="flight-item__number">SU-1854</div>
+                    <div class="flight-item__status">Задержка +1ч</div>
+                </div>
+            </div>
+            <div class="modal__tab-content" id="arrivals">
+                <div class="flight-item">
+                    <div class="flight-item__time">09:30</div>
+                    <div class="flight-item__destination">Из Москвы (Домодедово)</div>
+                    <div class="flight-item__number">SU-1441</div>
+                    <div class="flight-item__status">Приземлился</div>
+                </div>
+                <div class="flight-item">
+                    <div class="flight-item__time">11:45</div>
+                    <div class="flight-item__destination">Из Новосибирска</div>
+                    <div class="flight-item__number">SU-2543</div>
+                    <div class="flight-item__status">По расписанию</div>
+                </div>
+            </div>
+            <div class="modal__actions">
+                <button class="btn modal__btn">Полное расписание</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="online-board">
+        <div class="modal__content">
+            <button class="modal__close">&times;</button>
+            <h2 class="modal__title">Онлайн-табло</h2>
+            <div class="online-board">
+                <div class="online-board__header">
+                    <div class="online-board__column">Время</div>
+                    <div class="online-board__column">Рейс</div>
+                    <div class="online-board__column">Направление</div>
+                    <div class="online-board__column">Статус</div>
+                </div>
+                <div class="online-board__row">
+                    <div class="online-board__cell">08:45</div>
+                    <div class="online-board__cell">SU-1442</div>
+                    <div class="online-board__cell">Москва (Шереметьево)</div>
+                    <div class="online-board__cell status--checkin">Регистрация</div>
+                </div>
+                <div class="online-board__row">
+                    <div class="online-board__cell">09:30</div>
+                    <div class="online-board__cell">SU-1441</div>
+                    <div class="online-board__cell">Из Москвы (Домодедово)</div>
+                    <div class="online-board__cell status--arrived">Приземлился</div>
+                </div>
+                <div class="online-board__row">
+                    <div class="online-board__cell">10:20</div>
+                    <div class="online-board__cell">SU-6321</div>
+                    <div class="online-board__cell">Санкт-Петербург</div>
+                    <div class="online-board__cell status--ontime">По расписанию</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
