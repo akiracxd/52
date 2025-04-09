@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аэропорт Челябинск | Информация</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <i class="fas fa-plane-departure"></i>
+                    <span>Аэропорт Челябинск</span>
+                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav__link">Главная</a>
+                    <a href="flights.html" class="nav__link">Рейсы</a>
+                    <a href="services.html" class="nav__link">Услуги</a>
+                    <a href="info.html" class="nav__link active">Информация</a>
+                    <a href="contacts.html" class="nav__link">Контакты</a>
+                </nav>
+                <button class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="info">
+            <div class="container">
+                <h2 class="section-title">Полезная информация</h2>
+                
+                <div class="info__grid">
+                    <div class="info-card">
+                        <div class="info-card__icon"><i class="fas fa-passport"></i></div>
+                        <h3 class="info-card__title">Регистрация</h3>
+                        <div class="info-card__content">
+                            <p><strong>На внутренние рейсы:</strong> за 2 часа до вылета</p>
+                            <p><strong>На международные рейсы:</strong> за 3 часа до вылета</p>
+                            <p><strong>Завершается:</strong> за 40 минут до вылета</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-card__icon"><i class="fas fa-suitcase-rolling"></i></div>
+                        <h3 class="info-card__title">Багаж</h3>
+                        <div class="info-card__content">
+                            <p><strong>Ручная кладь:</strong> до 10 кг, 55×40×20 см</p>
+                            <p><strong>Багаж:</strong> до 23 кг, 158 см (сумма измерений)</p>
+                            <p><strong>Превышение:</strong> оплачивается отдельно</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-card__icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3 class="info-card__title">Безопасность</h3>
+                        <div class="info-card__content">
+                            <p><strong>Досмотр:</strong> все пассажиры и ручная кладь</p>
+                            <p><strong>Запрещено:</strong> жидкости >100 мл, острые предметы</p>
+                            <p><strong>Рекомендации:</strong> прибыть за 2-3 часа до вылета</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-card__icon"><i class="fas fa-child"></i></div>
+                        <h3 class="info-card__title">С детьми</h3>
+                        <div class="info-card__content">
+                            <p><strong>Детские комнаты:</strong> 2 этаж, сектор B</p>
+                            <p><strong>Питание:</strong> специальное меню в кафе</p>
+                            <p><strong>Коляски:</strong> бесплатная перевозка</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-card__icon"><i class="fas fa-paw"></i></div>
+                        <h3 class="info-card__title">С животными</h3>
+                        <div class="info-card__content">
+                            <p><strong>Документы:</strong> ветеринарный паспорт</p>
+                            <p><strong>Переноска:</strong> обязательна для перевозки</p>
+                            <p><strong>Ограничения:</strong> уточняйте у авиакомпании</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-card__icon"><i class="fas fa-exchange-alt"></i></div>
+                        <h3 class="info-card__title">Транзит</h3>
+                        <div class="info-card__content">
+                            <p><strong>Международный:</strong> зона транзита на 3 этаже</p>
+                            <p><strong>Внутренний:</strong> без выхода из зоны контроля</p>
+                            <p><strong>Гостиница:</strong> для пассажиров с длительной пересадкой</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info__scheme">
+                    <h3 class="info__subtitle">Схема терминала</h3>
+                    <div class="terminal-scheme">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAwIDUwMCI+PHJlY3Qgd2lkdGg9IjEwMDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjMjIyIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCI+VGVybWluYWwgc2NoZW1lIHBsYWNlaG9sZGVyPC90ZXh0Pjwvc3ZnPg==" alt="Схема терминала" class="terminal-scheme__image">
+                        <div class="terminal-scheme__legend">
+                            <div class="legend-item">
+                                <div class="legend-item__color" style="background-color: #8b0000;"></div>
+                                <div class="legend-item__label">Регистрация</div>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-item__color" style="background-color: #006400;"></div>
+                                <div class="legend-item__label">Зоны контроля</div>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-item__color" style="background-color: #00008b;"></div>
+                                <div class="legend-item__label">Выходы на посадку</div>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-item__color" style="background-color: #ff8c00;"></div>
+                                <div class="legend-item__label">Кафе и магазины</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info__faq">
+                    <h3 class="info__subtitle">Частые вопросы</h3>
+                    <div class="faq">
+                        <div class="faq-item">
+                            <button class="faq-item__question">Где найти потерянный багаж?<i class="fas fa-chevron-down"></i></button>
+                            <div class="faq-item__answer">
+                                <p>Отдел по работе с забытым багажом находится на 1 этаже, сектор D. Работает круглосуточно. Телефон: +7 (351) 123-45-71.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-item__question">Как добраться до аэропорта?<i class="fas fa-chevron-down"></i></button>
+                            <div class="faq-item__answer">
+                                <p>До аэропорта можно добраться:</p>
+                                <ul>
+                                    <li>На автобусе №1 от центрального автовокзала (каждые 30 минут)</li>
+                                    <li>На такси (средняя стоимость 500 руб. из центра)</li>
+                                    <li>На личном автомобиле (парковка у терминала)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-item__question">Можно ли провозить лекарства?<i class="fas fa-chevron-down"></i></button>
+                            <div class="faq-item__answer">
+                                <p>Да, лекарства можно провозить в ручной клади при наличии рецепта или справки от врача. Жидкие лекарства свыше 100 мл допускаются только при наличии медицинской необходимости.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__col">
+                    <h4 class="footer__title">Аэропорт Челябинск</h4>
+                    <p class="footer__text">Крупнейший аэропорт Уральского региона</p>
+                    <div class="footer__social">
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">Контакты</h4>
+                    <p class="footer__text"><i class="fas fa-phone"></i> +7 (351) 123-45-67</p>
+                    <p class="footer__text"><i class="fas fa-envelope"></i> info@chel-airport.ru</p>
+                    <p class="footer__text"><i class="fas fa-map-marker-alt"></i> Челябинск, ул. Аэропортная, 1</p>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">Навигация</h4>
+                    <a href="index.html" class="footer__link">Главная</a>
+                    <a href="flights.html" class="footer__link">Рейсы</a>
+                    <a href="services.html" class="footer__link">Услуги</a>
+                    <a href="info.html" class="footer__link">Информация</a>
+                    <a href="contacts.html" class="footer__link">Контакты</a>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                © 2025 Аэропорт Челябинск. Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal-overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
